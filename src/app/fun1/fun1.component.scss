@@ -1,0 +1,36 @@
+ion-card {
+    max-width:700px;
+    margin-top:80px;
+    padding:30px;
+}
+
+ion-input {
+    max-width:300px;
+    left:15px;
+    align-items: flex-end;
+    text-align: left;
+}
+ion-card-content {
+    display: inline;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+input[type=number]::-inner-spin-button, 
+input[type=number]::-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+ion-item {
+    color: gray;
+
+}
+ion-label {
+    width:100px;
+}

@@ -1,0 +1,34 @@
+<center><ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>InstaConvert</ion-card-subtitle>
+    <ion-card-title>0-X Caliberation</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-list>
+   <ion-item lines=none> <ion-label>Range Start</ion-label> <ion-input type="number" [value]="range" (input)="setQuantity1($event.target.value)" (ionChange)="this.calculate()"></ion-input></ion-item>
+  </ion-list>
+  <ion-item lines=none> <ion-label>Range End</ion-label>
+    <ion-input type="number" [value]="rangeEnd" (input)="setQuantity2($event.target.value)" (ionChange)="this.calculate()"></ion-input></ion-item>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>0%</ion-col>
+        <ion-col>25%</ion-col>
+        <ion-col>50%</ion-col>
+        <ion-col>75%</ion-col>
+        <ion-col>100%</ion-col>
+      </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col> {{range}} </ion-col>
+          <ion-col> {{range25}} </ion-col>
+          <ion-col> {{range50}} </ion-col>
+          <ion-col> {{range75}} </ion-col>
+          <ion-col> {{rangeEnd}} </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-card-content>
+</ion-card>
+</center>
